@@ -1,4 +1,4 @@
-module pgbooKit
+module github.com/llyas36/pgbooKit
 
 go 1.24.6
 
