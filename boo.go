@@ -11,7 +11,7 @@ import (
 func DB() *pgxpool.Pool {
 
 	dbpool, err := pgxpool.New(context.Background(), os.Getenv("DATABASE_URL"))// RUN .env file in the terminal or use export DATABASE_URL=url-link
-
+//     postgresql://myuser:mypassword@localhost:5432/mydatabase
 	if err != nil{
 		fmt.Fprintf(os.Stderr, "Unable to create")
 		os.Exit(1)
